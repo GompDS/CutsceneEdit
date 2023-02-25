@@ -5,6 +5,20 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Version>1.0.0</Version>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Reference Include="SoulsFormats">
+        <HintPath>Lib\SoulsFormats.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <CopyInstructions Include="instructions.txt" />
+    </ItemGroup>
+    
+    <Target Name="Copy" AfterTargets="AfterBuild">
+        <Copy SourceFiles="@(CopyInstructions)" DestinationFolder="bin\Debug\net6.0"/>
+    </Target>
 </Project>

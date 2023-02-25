@@ -21,9 +21,11 @@ Enter the index of a specific cut if you only want changes to be applied to that
 
 Note: rotation seems a little buggy and might edit other cuts too even if you only edit one.
 
+4) Put the path to a remobnd.dcx or mqb file.
+
 EXAMPLES:
 
-CutsceneEdit.exe rc 0 0.4 0
-CutsceneEdit.exe rs 90 0 0
-CutsceneEdit.exe mc 1 0 0 
-CutsceneEdit.exe ms 410 123 56 2
+rc 0 0.4 0 s40_00_0070.remobnd.dcx
+rs 90 0 0 s31_00_0020.mqb
+mc 1 0 0 s35_00_0050.remobnd.dcx
+ms 410 123 56 s32_00_0010.mqb
